@@ -126,9 +126,9 @@ const THEMES = [
 { id: 'theme-music', name: 'Vinyl Stage Theme' }
  ];
 
-const generateBlankMatrix = (multiplier = 1) => Array.from({ length: 6 }, (, c) => ({
-name: Category ${c + 1}`,
-questions: Array.from({ length: 5 }, (, q) => ({
+const generateBlankMatrix = (multiplier = 1) => Array.from({ length: 6 }, (_, c) => ({
+name: `Category ${c + 1}`,
+questions: Array.from({ length: 5 }, (_, q) => ({
 points: (q + 1) * 200 * multiplier,
 questionText: "", questionMedia: "", questionMediaType: "text",
 answerText: "", answerMedia: "", answerMediaType: "text",
